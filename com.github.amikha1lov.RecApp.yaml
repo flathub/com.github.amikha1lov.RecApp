@@ -33,8 +33,8 @@ modules:
     buildsystem: meson
     sources:
       - type: git
-        tag: v1.0.2
-        commit: 0c911ee5b1bd2251ab1e9056f7be207de4306169
+        tag: v1.0.4
+        commit: cebc353e960cc1e2827a031b3039585fb91c847e
         url: https://github.com/amikha1lov/RecApp/
 
     modules:
