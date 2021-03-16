@@ -1,6 +1,6 @@
 app-id: com.github.amikha1lov.RecApp
 runtime: org.gnome.Platform
-runtime-version: '3.36'
+runtime-version: '3.38'
 sdk: org.gnome.Sdk
 command: recapp
 finish-args:
@@ -33,8 +33,8 @@ modules:
     buildsystem: meson
     sources:
       - type: git
-        tag: v1.1.0
-        commit: 65d6ef134b1110124fecde758a926f3856c03daa
+        tag: v1.1.1
+        commit: fc914aaeec6e55c3ba919ea98cc5d39e981a7411
         url: https://github.com/amikha1lov/RecApp/
 
     modules:
