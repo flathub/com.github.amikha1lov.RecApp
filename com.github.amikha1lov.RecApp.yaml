@@ -43,10 +43,12 @@ modules:
           - --enable-shared
           - --system-libx264
           - --enable-pic
+          - --enable-lto
         sources:
-          - type: archive
-            url: https://download.videolan.org/pub/x264/snapshots/x264-snapshot-20191217-2245-stable.tar.bz2
-            sha256: b2495c8f2930167d470994b1ce02b0f4bfb24b3317ba36ba7f112e9809264160
+          - type: git
+            url: https://code.videolan.org/videolan/x264.git
+            branch: master
+            commit: 66a5bc1bd1563d8227d5d18440b525a09bcf17ca
 
       - name: gstreamer1-plugins-ugly
         buildsystem: meson
@@ -54,9 +56,9 @@ modules:
           - -D=x264=enabled
         sources:
           - type: archive
-            url: https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.16.3.tar.xz
-            sha256: 403c21688065f41e53008874402b5c07832567cc1309a60df597eab7ff5843f0
-            
+            url: https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.18.5.tar.xz
+            sha256: df32803e98f8a9979373fa2ca7e05e62f977b1097576d3a80619d9f5c69f66d9
+
       - name: glm
         buildsystem: cmake-ninja
         config-options:
@@ -70,8 +72,8 @@ modules:
         buildsystem: cmake-ninja
         sources:
           - type: archive
-            url: https://github.com/naelstrof/slop/archive/v7.5.tar.gz
-            sha256: 94d8b6270217cd7f56ce7d4a9a75069025262830a2f91c3239b7fc07da5ea8da
+            url: https://github.com/naelstrof/slop/archive/v7.6.tar.gz
+            sha256: ec45f9a69d7a24df621f5c634d202451ddca987d550cf588c5c427b99106fb6b
 
       - name: pydbus
         buildsystem: simple
@@ -88,5 +90,5 @@ modules:
           - python3 ./setup.py install --prefix=/app --root=/
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-21.3.4.tar.gz
-            sha256: faa8b9336237565990298f20870e13dd1678a4586847ca5a7ff2abf10752f356
+            url: https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-21.10.3.tar.gz
+            sha256: 1ecd3146d6ae715aa7983195318268ad1aaad5e125fe964d3eac2b1c53075d04
