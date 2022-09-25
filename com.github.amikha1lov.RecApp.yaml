@@ -48,7 +48,7 @@ modules:
           - type: git
             url: https://code.videolan.org/videolan/x264.git
             branch: master
-            commit: 66a5bc1bd1563d8227d5d18440b525a09bcf17ca
+            commit: e067ab0b530395f90b578f6d05ab0a225e2efdf9
 
       - name: gstreamer1-plugins-ugly
         buildsystem: meson
@@ -90,5 +90,5 @@ modules:
           - python3 ./setup.py install --prefix=/app --root=/
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-21.10.3.tar.gz
-            sha256: 1ecd3146d6ae715aa7983195318268ad1aaad5e125fe964d3eac2b1c53075d04
+            url: https://files.pythonhosted.org/packages/38/b5/7fb041271e9db6ad54a74eecbc84f8c9a9faf696c267b63dfc9fbbf63d49/pulsectl-22.3.2.tar.gz
+            sha256: cc174e1ceebd4e6222c5b78f4f415f12e80753c9ab75ab354159b4cb5950b084
