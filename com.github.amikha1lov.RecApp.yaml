@@ -1,6 +1,6 @@
 app-id: com.github.amikha1lov.RecApp
 runtime: org.gnome.Platform
-runtime-version: '41'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: recapp
 finish-args:
@@ -48,16 +48,17 @@ modules:
           - type: git
             url: https://code.videolan.org/videolan/x264.git
             branch: master
-            commit: 66a5bc1bd1563d8227d5d18440b525a09bcf17ca
+            commit: e067ab0b530395f90b578f6d05ab0a225e2efdf9
 
       - name: gstreamer1-plugins-ugly
         buildsystem: meson
         config-opts:
+          - -D=gpl=enabled
           - -D=x264=enabled
         sources:
           - type: archive
-            url: https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.18.5.tar.xz
-            sha256: df32803e98f8a9979373fa2ca7e05e62f977b1097576d3a80619d9f5c69f66d9
+            url: https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.20.3.tar.xz
+            sha256: 8caa20789a09c304b49cf563d33cca9421b1875b84fcc187e4a385fa01d6aefd
 
       - name: glm
         buildsystem: cmake-ninja
@@ -90,5 +91,5 @@ modules:
           - python3 ./setup.py install --prefix=/app --root=/
         sources:
           - type: archive
-            url: https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-21.10.3.tar.gz
-            sha256: 1ecd3146d6ae715aa7983195318268ad1aaad5e125fe964d3eac2b1c53075d04
+            url: https://files.pythonhosted.org/packages/38/b5/7fb041271e9db6ad54a74eecbc84f8c9a9faf696c267b63dfc9fbbf63d49/pulsectl-22.3.2.tar.gz
+            sha256: cc174e1ceebd4e6222c5b78f4f415f12e80753c9ab75ab354159b4cb5950b084
