@@ -1,6 +1,6 @@
 app-id: com.github.amikha1lov.RecApp
 runtime: org.gnome.Platform
-runtime-version: '43'
+runtime-version: '46'
 sdk: org.gnome.Sdk
 command: recapp
 finish-args:
@@ -36,6 +36,8 @@ modules:
         tag: v1.1.1
         commit: fc914aaeec6e55c3ba919ea98cc5d39e981a7411
         url: https://github.com/amikha1lov/RecApp/
+      - type: patch
+        path: fix_appdata.patch
 
     modules:
       - name: x264

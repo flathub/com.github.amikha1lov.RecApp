@@ -1,0 +1,24 @@
+diff --git a/data/com.github.amikha1lov.RecApp.appdata.xml.in b/data/com.github.amikha1lov.RecApp.appdata.xml.in
+index 00c576d..881a093 100644
+--- a/data/com.github.amikha1lov.RecApp.appdata.xml.in
++++ b/data/com.github.amikha1lov.RecApp.appdata.xml.in
+@@ -25,8 +25,8 @@
+         </screenshot>
+     </screenshots>
+ 
+-    <content_rating type="oars-1.0">
+-    </content_rating>
++    <content_rating type="oars-1.1" />
++    <launchable type="desktop-id">com.github.amikha1lov.RecApp.desktop</launchable>
+ 
+     <releases>
+         <release date="2021-03-17" version="1.1.1"></release>
+@@ -42,5 +42,6 @@
+     <developer_name>Alexey Mikhailov</developer_name>
+     <url type="homepage">https://github.com/amikha1lov/RecApp</url>
+     <url type="bugtracker">https://github.com/amikha1lov/RecApp/issues</url>
++    <url type="vcs-browser">https://github.com/amikha1lov/RecApp</url>
+     <url type="translate">https://github.com/amikha1lov/RecApp/tree/master/po</url>
+ </component>
+--
+libgit2 1.7.2
